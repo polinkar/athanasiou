@@ -1,0 +1,11 @@
+html {
+  font-size: 16px;
+
+  @include view(md-max) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: "Roboto";
+}

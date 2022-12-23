@@ -1,0 +1,12 @@
+// Remove borders, outlines & backgrounds
+@mixin clear-styles {
+  border: none;
+  outline: none;
+  background-color: $transparent;
+}
+
+// @mixin centered {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }

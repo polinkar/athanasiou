@@ -1,0 +1,96 @@
+<header class="header">
+  <div class="header__container boxed">
+    <div class="header__logo-container">
+      <img
+        src="../src/assets/img/sucessible-logo-and-text.svg"
+        alt=""
+        class="logo header__logo"
+      />
+    </div>
+
+    <!-- Main Menu -->
+    <nav class="main-menu">
+      <div class="main-menu__mobile-button hamburger" data-open="false"></div>
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="/pages/about.html" class="main-menu__link">About us</a>
+        </li>
+        <!-- Sub Menu -->
+        <li class="main-menu__item main-menu__item--has-children">
+          <a href="/pages/services.html" class="main-menu__link">Services</a>
+          <ul class="main-menu__sub-list">
+            <li class="main-menu__sub-item">
+              <a href="/pages/services.html" class="main-menu__sub-item-link"
+                >Service 1</a
+              >
+            </li>
+            <li class="main-menu__sub-item">
+              <a href="/pages/services.html" class="main-menu__sub-item-link"
+                >Service 2</a
+              >
+            </li>
+            <li class="main-menu__sub-item">
+              <a href="/pages/services.html" class="main-menu__sub-item-link"
+                >Service 3</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="main-menu__item">
+          <a href="/pages/case-studies.html" class="main-menu__link"
+            >Case Studies</a
+          >
+        </li>
+        <li class="main-menu__item">
+          <a href="/pages/blog.html" class="main-menu__link">Blog</a>
+        </li>
+        <li class="main-menu__item">
+          <a href="/pages/communication.html" class="main-menu__link"
+            >Communication</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Search Form -->
+    <form role="search" class="search-form" method="get" action="">
+      <label class="search-form__label">
+        <input
+          type="search"
+          class="search-form__input search-field"
+          placeholder="Search"
+          value=""
+          name="s"
+          title="Search for:"
+        />
+      </label>
+      <button type="button" class="search-form__button"></button>
+    </form>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <div
+        class="language-switcher__container wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal"
+      >
+        <ul class="language-switcher__list">
+          <li
+            class="language-switcher__item wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-el wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal"
+          >
+            <a href="" class="language-switcher__link wpml-ls-link">
+              <span class="language-switcher__text wpml-ls-native">ΕΛ</span></a
+            >
+          </li>
+          <li
+            class="language-switcher__item wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal"
+          >
+            <a href="" class="language-switcher__link wpml-ls-link">
+              <span class="language-switcher__text wpml-ls-native" lang="en"
+                >EN</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,40 @@
+// Language Swithcer
+.language-switcher {
+  grid-area: language-switcher;
+  @include view(lg-max) {
+    justify-self: end;
+    z-index: 1;
+    position: relative;
+  }
+
+  // @include view(md-max) {
+  //   display: none;
+  // }
+
+  &__list {
+    display: flex;
+    color: $black;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex: 1 1 auto;
+    list-style: none;
+
+    // Create the Divider
+    &:first-child::after {
+      content: "";
+      height: 2rem;
+      margin: auto;
+      border: 1px solid $black;
+    }
+  }
+
+  &__text {
+    color: $black;
+    padding: max(0.5rem);
+  }
+}

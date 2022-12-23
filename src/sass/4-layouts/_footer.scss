@@ -1,0 +1,35 @@
+// Footer
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $grayLight;
+
+  &__container {
+    display: grid;
+    grid-template-areas: "logo footer-menu contact-us contact-info";
+    align-items: center;
+    padding: 2rem 0;
+
+    @include view(lg-max) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "logo contact-us" "footer-menu contact-info";
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__contact-us {
+    grid-area: contact-us;
+  }
+
+  &__copyrights {
+    align-self: stretch;
+    padding: 2rem 0 4rem;
+    text-align: center;
+    background-color: $white;
+  }
+}

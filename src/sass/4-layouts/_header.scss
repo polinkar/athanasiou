@@ -1,0 +1,41 @@
+//Header
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  z-index: 2;
+
+  &__container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "logo main-menu search-form language-switcher";
+    align-items: center;
+
+    @include view(lg-max) {
+      grid-template-columns: auto;
+      grid-template-areas: "search-form language-switcher" "logo main-menu";
+      // position: relative;
+    }
+
+    @include view(md-max) {
+      grid-template-columns: auto;
+      grid-template-areas: "logo main-menu";
+      // position: relative;
+    }
+
+    // Make the hero section's background visible
+    // position: absolute;
+    padding: $unstickGap 0;
+  }
+
+  &__logo-container {
+    z-index: 2;
+  }
+
+  &__logo {
+    grid-area: logo;
+    width: clamp(10rem, 100%, 200px);
+  }
+}

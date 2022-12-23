@@ -1,0 +1,30 @@
+.contact-info {
+  grid-area: contact-info;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  // @include view(lg) {
+  //   align-self: end;
+  //   flex-direction: column;
+  //   align-items: end;
+  // }
+
+  &__linkedin {
+    &::before {
+      content: "L";
+    }
+  }
+
+  &__tel {
+    &::before {
+      content: "Tel:";
+    }
+  }
+
+  &__email {
+    &::before {
+      content: "env | ";
+    }
+  }
+}

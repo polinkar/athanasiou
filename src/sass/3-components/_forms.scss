@@ -1,0 +1,33 @@
+// Search Form
+.search-form {
+  grid-area: search-form;
+  display: flex;
+
+  @include view(md-max) {
+    z-index: 1;
+    position: relative;
+    // display: none;
+  }
+
+  &__input {
+    @include clear-styles;
+    border-bottom: 1px solid $black;
+
+    &::placeholder {
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $black;
+      opacity: 0.6;
+    }
+  }
+
+  &__button {
+    @include clear-styles;
+
+    &:after {
+      content: "🔎";
+    }
+  }
+}
