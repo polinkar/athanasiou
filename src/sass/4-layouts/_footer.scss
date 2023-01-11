@@ -4,32 +4,102 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $grayLight;
+  background-color: $primary;
 
   &__container {
     display: grid;
-    grid-template-areas: "logo footer-menu contact-us contact-info";
-    align-items: center;
-    padding: 2rem 0;
+    grid-template-areas: "logo footer-menu contact-info certification";
+    gap: 2rem;
+    justify-items: end;
+    align-items: start;
+    padding-top: 5rem;
 
-    @include view(lg-max) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "logo contact-us" "footer-menu contact-info";
+    @include view(md-max) {
+      grid-template-areas: "logo footer-menu" " contact-info certification ";
+      justify-items: start;
+    }
+
+    @include view(sm) {
+      grid-template-columns: 100%;
+      grid-template-areas: "logo" "footer-menu" "contact-info" "certification" "bottom-bar";
     }
   }
 
-  &__logo {
+  &__logo-container {
     grid-area: logo;
+    justify-self: start;
+    align-self: start;
   }
 
-  &__contact-us {
-    grid-area: contact-us;
+  &__heading {
+    color: $white;
+  }
+
+  &__contact-info-list {
+    padding: 0;
+    list-style: none;
+    color: $white;
+  }
+
+  &__contact-info-link {
+    color: $white;
+  }
+
+  &__certification {
+    grid-area: certification;
+  }
+
+  &__certification-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include view(lg-max) {
+      align-items: start;
+    }
+  }
+
+  &__certification-image {
+    aspect-ratio: 1/1;
+    width: 50%;
+    clip-path: circle(30%);
+  }
+
+  // Bottom Bar
+  &__bottom-bar {
+    grid-column: span 4;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 1rem 0;
+    background-color: $primary;
+    border-top: solid 1px $white;
+    color: $white;
+
+    @include view(md-max) {
+      grid-column: span 2;
+      align-items: end;
+    }
+
+    @include view(sm) {
+      grid-template-columns: 1fr;
+      grid-area: bottom-bar;
+    }
   }
 
   &__copyrights {
-    align-self: stretch;
-    padding: 2rem 0 4rem;
-    text-align: center;
-    background-color: $white;
+    justify-self: start;
+  }
+
+  &__linkedin {
+    justify-self: end;
+
+    &:after {
+      content: "IN";
+      padding: 0 0.5rem;
+    }
   }
 }

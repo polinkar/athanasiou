@@ -2,6 +2,7 @@
 .search-form {
   grid-area: search-form;
   display: flex;
+  display: none;
 
   @include view(md-max) {
     z-index: 1;

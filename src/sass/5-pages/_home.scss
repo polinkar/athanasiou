@@ -1,8 +1,124 @@
 //Homepage
 
 .hero {
-  background-color: $grayLight;
-  min-height: 80vh;
+  justify-content: center;
+  position: relative;
+  background-color: $primary;
+  background-image: url("/src/assets/img/hero-home-1.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+
+    z-index: 1;
+    color: $white;
+  }
+
+  &__heading-small:before {
+    content: "";
+    position: absolute;
+    height: 0.1rem;
+    width: calc((100vw - 1350px) / 2);
+    margin-top: 1rem;
+    left: 0;
+    background-color: $accent1;
+  }
+
+  &__heading-big {
+    margin: 0;
+    padding: 1rem 0;
+    width: 1ch;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    width: 40ch;
+    @include view(md-max) {
+      width: auto;
+    }
+  }
+}
+
+.about {
+  position: relative;
+  background-image: url("/src/assets/img/home-watermark.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 50%;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+  &__text-card {
+    @include view(md-max) {
+      grid-column: span 2;
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+  }
+
+  &__carousel {
+    align-self: start;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    @include view(md-max) {
+      grid-column: span 2;
+    }
+  }
+
+  &__presentation {
+    grid-column: span 2;
+  }
+
+  &__presentation-text-container {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin-top: 2rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 0.1rem;
+      width: calc(100vw - (1290px));
+      margin-top: 10rem;
+      left: 0;
+      background-color: $accent1;
+    }
+
+    @include view(md-max) {
+      grid-column: span 2;
+      align-self: end;
+      max-width: 100%;
+    }
+  }
+}
+
+.work {
+  background: $primary;
+  color: $white;
 
   &__container {
     display: flex;
@@ -10,31 +126,84 @@
     align-items: center;
   }
 
-  &__text-container {
+  &__heading {
+    align-self: start;
+  }
+
+  &__heading-small {
+    align-self: start;
+  }
+
+  &__info {
+    color: $white;
+  }
+
+  &__cards {
+    margin: 2rem 0;
+  }
+}
+
+.services {
+  position: relative;
+  background-image: url("/src/assets/img/home-watermark.jpeg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: $white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+
+    @include view(md-max) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__heading--accent {
+    color: $accent1;
+  }
+}
+
+.milestone {
+  &__container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 12rem;
-    color: $purple;
+    gap: 1.5rem;
+
+    &--1 {
+      align-items: start;
+    }
+
+    &--2 {
+      flex-direction: row-reverse;
+      align-items: end;
+    }
+  }
+
+  &__number {
+    display: block;
+    color: $accent1;
   }
 
   &__text {
-    font-size: 2.125rem;
-    padding: 0 1rem;
+    display: block;
+    color: $white;
   }
-
-  &__text--big {
-    font-size: 4rem;
-    font-weight: 700;
-  }
-
-  // &__image-container {
-  //   display: flex;
-  //   justify-content: center;
-  // }
-
-  // &__image {
-  //   position: absolute;
-  //   top: 10%;
-  // }
 }

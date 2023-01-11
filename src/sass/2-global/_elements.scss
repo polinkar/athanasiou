@@ -9,6 +9,12 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $accent1;
+    transition: color ease 0.3s;
+  }
 }
 
 .main {

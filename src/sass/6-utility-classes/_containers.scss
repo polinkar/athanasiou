@@ -1,10 +1,66 @@
 // Containers
 .boxed {
-  width: $box;
+  width: 90%;
+  max-width: 1290px;
 }
 
 .centered {
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 2rem;
+
+  @include view(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Lines
+
+.accent-line {
+  display: flex;
+  gap: 1rem;
+
+  &:before {
+    content: "";
+    height: 0.1rem;
+    width: 2.5rem;
+    margin-top: 1rem;
+    background-color: $accent1;
+  }
+}
+
+.accent-line-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap; // Never take 2 lines
+
+  &:after {
+    content: "";
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $accent1;
+  }
+}
+
+.accent-line-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap; // Never take 2 lines
+
+  &:before {
+    content: "";
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $accent1;
+  }
 }

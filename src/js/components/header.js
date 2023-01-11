@@ -1,5 +1,6 @@
 import breakpoints from "../helpers/breakpoints.js";
 import searchFormLogic from "../logic/searchFormLogic.js";
+import calcHeight from "../logic/calcHeight.js";
 import {
   changeToggleShape,
   responsiveMainMenu,
@@ -21,10 +22,16 @@ const header = async () => {
   //////////////////////////////////////////////////////////////////////////////////////
 
   // Variables that belong to header must be declared here and not in each module
+  const headerElement = document.querySelector(".header");
+  const firstSection = document.querySelector("[first-section]");
+
   const hamburger = document.querySelector(".hamburger");
   const mainMenuList = document.querySelector(".main-menu__list");
+
   const searchForm = document.querySelector(".search-form");
   const languageSwitcher = document.querySelector(".language-switcher");
+
+  calcHeight(headerElement, firstSection, 80);
 
   searchFormLogic();
   changeToggleShape(hamburger, mainMenuList);

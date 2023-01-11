@@ -1,0 +1,48 @@
+// Card with Image
+.card {
+  &__heading {
+    padding: 0.5rem 0;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.1rem;
+      top: 0;
+      background: $grayLight;
+      opacity: 0.3;
+    }
+  }
+
+  &__location {
+    color: $white;
+
+    &:before {
+      content: "📍";
+      padding: 0 0.5rem;
+      color: $accent1;
+    }
+  }
+}
+
+// Card with Counter Number
+.card-counter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  border: solid 0.1rem $gray;
+
+  &__count {
+    font-size: 3.125rem;
+    font-weight: bold;
+    line-height: 3.125rem;
+    color: $grayLight;
+  }
+}

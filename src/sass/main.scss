@@ -12,7 +12,7 @@
 
 // Components
 @import "3-components/buttons";
-@import "3-components/contact-info";
+@import "3-components/icons-grid";
 @import "3-components/forms";
 @import "3-components/navigation";
 @import "3-components/language-switcher";
@@ -22,10 +22,12 @@
 @import "4-layouts/header";
 @import "4-layouts/footer";
 @import "4-layouts/newsletter-form";
+@import "4-layouts/carousel";
 @import "4-layouts/puzzle";
 
 // Pages
 @import "5-pages/home";
+@import "5-pages/about";
 @import "5-pages/contact";
 
 // Utility Classes

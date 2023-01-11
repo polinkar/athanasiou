@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Successible</title>
+    <title>Αθανασίου - Μεταλλικές Κατασκευές</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/css/main.css" />
     <script defer type="module" src="/src/js/index.js"></script>
   </head>
@@ -14,25 +20,319 @@
     <!-- Main -->
     <main class="main">
       <!-- Hero -->
-      <section class="hero centered">
-        <div class="hero__container boxed">
-          <div class="hero__image-container">
-            <img
-              src="./src/assets/img/hero-home-1.svg"
-              alt=""
-              class="hero__image"
-            />
+      <section class="hero" first-section>
+        <div class="hero__container boxed centered two-col">
+          <div class="hero__col-1">
+            <div class="hero__text-container">
+              <span lang="el" class="heading-small hero__heading-small"
+                >Επαγγεματισμός - Καινοτομία - Εμπιστοσύνη</span
+              >
+              <h1 class="hero__heading-big">Συγχρονες μεταλλικες κατασκευες</h1>
+              <p class="text hero__text">
+                Κύρια δραστηριότητα της Ν. Α. ΑΘΑΝΑΣΙΟΥ Α.Β.Ε.ΤΕ. είναι η
+                κατασκευή Μεταλλικών κτιρίων, Σπιτιών, Γερανογεφυρών καθώς και
+                Eιδικών Μεταλλικών κατασκευών.
+              </p>
+            </div>
+            <button lang="el" class="button button--animation">
+              <span class="button__container"
+                ><span class="button__text">Συμβουλευτείτε μας</span></span
+              >
+            </button>
           </div>
-          <div class="hero__text-container">
-            <span class="hero__text hero__text--big">People</span
-            ><span class="hero__text">Equipment</span
-            ><span class="hero__text">Profit</span
-            ><span class="hero__text hero__text--big">Sustainability</span>
+          <div class="hero__col-2">
+            <div class="milestone">
+              <div class="milestone__container milestone__container--1">
+                <div class="milestone__image-container">
+                  <img
+                    src="./src/assets/img/milestone-01.svg"
+                    alt=""
+                    class="milestone__image"
+                  />
+                </div>
+                <div class="milestone__text-container">
+                  <span class="milestone__number heading">128 +</span>
+                  <span class="milestone__text text">Ολοκληρωμένα Έργα</span>
+                </div>
+              </div>
+              <div class="milestone__container milestone__container--2">
+                <div class="milestone__image-container">
+                  <img
+                    src="./src/assets/img/milestone-02.svg"
+                    alt=""
+                    class="milestone__image"
+                  />
+                </div>
+                <div class="milestone__text-container">
+                  <span class="milestone__number heading">50.000 +</span>
+                  <span class="milestone__text text">Τετραγωνικά Μέτρα</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- DUMMY -->
-      <section class="hero-2 centered">I am a dummy</section>
+
+      <!-- About -->
+      <section class="about">
+        <div class="about__container boxed centered two-col">
+          <div class="about__text-card">
+            <h2
+              lang="el"
+              class="heading-small about__heading-small accent-line"
+            >
+              Ποιοι Είμαστε
+            </h2>
+            <span class="heading about__heading">Σχετικά με Εμάς</span>
+            <p class="text about__text">
+              Κύριες δραστηριότητες της Ν. Α. ΑΘΑΝΑΣΙΟΥ Α.Β.Ε.ΤΕ. είναι η
+              κατασκευή έργων από δομικό χάλυβα και η επεξεργασία χάλυβα
+              οπλισμού σκυροδέματος στις ιδιόκτητες εγκαταστάσεις των 15.000 τ.μ
+              στο Βιομηχανικό Πάρκο του Αυλώνα Αττικής.<br /><br />
+              Εκεί στεγάζεται η υπερσύγχρονη γραμμή παραγωγής με αυτόματα
+              μηχανήματα τελευταίας γενιάς τα οποία με την χρήση νέων
+              τεχνολογιών εξασφαλίζουν την ακρίβεια, την ποιότητα και την
+              έγκαιρη ολοκλήρωση των κατασκευών.
+            </p>
+            <button lang="el" class="button button--animation">
+              <span class="button__container"
+                ><span class="button__text">Δείτε Περισσότερα</span></span
+              >
+            </button>
+          </div>
+
+          <!-- Carousel -->
+          <div class="carousel about__carousel" data-carousel>
+            <div class="carousel__container" data-slides>
+              <div class="carousel__slide" data-active>
+                <img
+                  src="./src/assets/img/home-work-01.jpg"
+                  class="carousel__image"
+                />
+              </div>
+              <div class="carousel__slide">
+                <img
+                  src="./src/assets/img/home-work-02.jpg"
+                  class="carousel__image"
+                />
+              </div>
+              <div class="carousel__slide">
+                <img
+                  src="./src/assets/img/home-work-03.jpg"
+                  class="carousel__image"
+                />
+              </div>
+              <div class="carousel__slide">
+                <img
+                  src="./src/assets/img/home-work-04.jpg"
+                  class="carousel__image"
+                />
+              </div>
+            </div>
+            <!-- Pagination  -->
+            <div class="carousel__pagination">
+              <div
+                class="carousel__arrow carousel__arrow--left"
+                data-carousel-btn="prev"
+              >
+                ←
+              </div>
+              <div class="carousel__dots" data-pagination>
+                <!-- Coming from JS according to the number of slides  -->
+              </div>
+              <div
+                class="carousel__arrow carousel__arrow--right"
+                data-carousel-btn="next"
+              >
+                →
+              </div>
+            </div>
+          </div>
+
+          <!-- Presentation -->
+          <div class="about__presentation two-col">
+            <div class="about__presentation-text-container">
+              <span class="heading-medium">H N.A. Aθανασίου Α.Β.Ε.Τ.Ε</span>
+              <span class="text"
+                >έχει στο ενεργητικό της μεταλλικές κατασκευές ποικίλης φύσεως:
+              </span>
+            </div>
+            <div class="icons">
+              <div class="icons__icon">
+                <span class="icons__text">Βιομηχανικά Κτίρια Παραγωγής</span>
+                <img
+                  src="./src/assets/img/home-icon-01.svg"
+                  alt=""
+                  class="icons__image"
+                />
+              </div>
+              <div class="icons__icon">
+                <span class="icons__text">Βιομηχανικά Κτίρια Παραγωγής</span>
+                <img
+                  src="./src/assets/img/home-icon-02.svg"
+                  alt=""
+                  class="icons__image"
+                />
+              </div>
+              <div class="icons__icon">
+                <span class="icons__text">Βιομηχανικά Κτίρια Παραγωγής</span>
+                <img
+                  src="./src/assets/img/home-icon-03.svg"
+                  alt=""
+                  class="icons__image"
+                />
+              </div>
+              <div class="icons__icon">
+                <span class="icons__text">Βιομηχανικά Κτίρια Παραγωγής</span>
+                <img
+                  src="./src/assets/img/home-icon-04.svg"
+                  alt=""
+                  class="icons__image"
+                />
+              </div>
+              <div class="icons__icon">
+                <span class="icons__text">Βιομηχανικά Κτίρια Παραγωγής</span>
+                <img
+                  src="./src/assets/img/home-icon-05.svg"
+                  alt=""
+                  class="icons__image"
+                />
+              </div>
+              <div class="icons__icon">
+                <span class="icons__text">Βιομηχανικά Κτίρια Παραγωγής</span>
+                <img
+                  src="./src/assets/img/home-icon-06.svg"
+                  alt=""
+                  class="icons__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="work">
+        <div class="work__container boxed centered">
+          <h2 lang="el" class="heading-small work__heading-small accent-line">
+            Τα έργα μας
+          </h2>
+          <span class="heading work__heading">Τα Έργα μας</span>
+          <div class="work__cards two-col">
+            <div class="card">
+              <img
+                src="./src/assets/img/home-work-01.jpg"
+                alt=""
+                class="card__image"
+              />
+              <h3 class="heading-large card__heading">Τίτλος Έργου</h3>
+              <div class="card__buttons">
+                <a href="" class="card__location">Τοποθεσία</a>
+                <a lang="el" href="" class="more card__more">Περισσότερα</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./src/assets/img/home-work-02.jpg"
+                alt=""
+                class="card__image"
+              />
+              <h3 class="heading-large card__heading">Τίτλος Έργου</h3>
+              <div class="card__buttons">
+                <a href="" class="card__location">Τοποθεσία</a>
+                <a lang="el" href="" class="more card__more">Περισσότερα</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./src/assets/img/home-work-03.jpg"
+                alt=""
+                class="card__image"
+              />
+              <h3 class="heading-large card__heading">Τίτλος Έργου</h3>
+              <div class="card__buttons">
+                <a href="" class="card__location">Τοποθεσία</a>
+                <a lang="el" href="" class="more card__more">Περισσότερα</a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./src/assets/img/home-work-04.jpg"
+                alt=""
+                class="card__image"
+              />
+              <h3 class="heading-large card__heading">Τίτλος Έργου</h3>
+              <div class="card__buttons">
+                <a href="" class="card__location">Τοποθεσία</a>
+                <a lang="el" href="" class="more card__more">Περισσότερα</a>
+              </div>
+            </div>
+          </div>
+          <button lang="el" class="button button--animation">
+            <span class="button__container"
+              ><span class="button__text">Όλα τα Έργα</span></span
+            >
+          </button>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services">
+        <div class="services__container centered boxed">
+          <h2
+            lang="el"
+            class="heading-small services__heading-small accent-line"
+          >
+            Υπηρεσίες
+          </h2>
+
+          <span class="heading services__heading"
+            >Τι <span class="services__heading--accent">Υπηρεσίες</span> <br />
+            Προσφέρουμε</span
+          >
+          <div class="services__cards">
+            <div class="card-counter">
+              <div class="card-counter__count">01</div>
+              <div lang="el" class="heading-medium-small card-counter__heading">
+                Μεταλλικά Κτίρια
+              </div>
+              <div class="text card-counter__text">
+                Κύρια δραστηριότητα της Ν. Α. ΑΘΑΝΑΣΙΟΥ Α.Β.Ε.ΤΕ. είναι η
+                κατασκευή Μεταλλικών κτιρίων.
+              </div>
+              <a lang="el" href="" class="more card-counter__more"
+                >Περισσότερα</a
+              >
+            </div>
+            <div class="card-counter">
+              <div class="card-counter__count">01</div>
+              <div lang="el" class="heading-medium-small card-counter__heading">
+                Μεταλλικά Κτίρια
+              </div>
+              <div class="text card-counter__text">
+                Κύρια δραστηριότητα της Ν. Α. ΑΘΑΝΑΣΙΟΥ Α.Β.Ε.ΤΕ. είναι η
+                κατασκευή Μεταλλικών κτιρίων.
+              </div>
+              <a lang="el" href="" class="more card-counter__more"
+                >Περισσότερα</a
+              >
+            </div>
+            <div class="card-counter">
+              <div class="card-counter__count">01</div>
+              <div lang="el" class="heading-medium-small card-counter__heading">
+                Μεταλλικά Κτίρια
+              </div>
+              <div class="text card-counter__text">
+                Κύρια δραστηριότητα της Ν. Α. ΑΘΑΝΑΣΙΟΥ Α.Β.Ε.ΤΕ. είναι η
+                κατασκευή Μεταλλικών κτιρίων.
+              </div>
+              <a lang="el" href="" class="more card-counter__more"
+                >Περισσότερα</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->

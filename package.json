@@ -1,14 +1,18 @@
 {
-  "name": "successible",
+  "name": "athanasiou",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass --watch src/sass/main.scss -o src/css"
   },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^8.0.0"
+    "sass": "^1.57.1"
   }
 }

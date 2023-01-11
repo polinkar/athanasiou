@@ -1,0 +1,109 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="62.92"
+  height="58.528"
+  viewBox="0 0 62.92 58.528"
+>
+  <g id="Group_57" data-name="Group 57" transform="translate(0 0.788)">
+    <path
+      id="Path_76"
+      data-name="Path 76"
+      d="M371,337.973V317h43.258v20.973"
+      transform="translate(-367.068 -281.232)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <line
+      id="Line_27"
+      data-name="Line 27"
+      x2="62.92"
+      transform="translate(0 56.741)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <path
+      id="Path_77"
+      data-name="Path 77"
+      d="M394.03,320.73c1.426-6.084,2.582-12.128,2.582-15.73h15.73c0,9.395,7.865,35.393,7.865,35.393V341.7"
+      transform="translate(-359.909 -284.962)"
+      fill="none"
+      stroke="#556474"
+      stroke-linejoin="round"
+      stroke-width="2"
+    />
+    <path
+      id="Path_78"
+      data-name="Path 78"
+      d="M414.88,305.819c0-4.465-.574-8.193-5.243-10.487-4.2-2.066-10.159,2.841-14.419-.806s-9.776-5.236-14.419-1.412c-3.122,2.572-8.568-.872-11.8-3.4"
+      transform="translate(-367.69 -289.714)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <path
+      id="Path_79"
+      data-name="Path 79"
+      d="M382.865,322.906V298H375v24.906"
+      transform="translate(-365.824 -287.138)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <path
+      id="Path_80"
+      data-name="Path 80"
+      d="M388.865,319.8V308H381"
+      transform="translate(-363.959 -284.03)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <line
+      id="Line_28"
+      data-name="Line 28"
+      x2="5.243"
+      transform="translate(9.176 50.187)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <line
+      id="Line_29"
+      data-name="Line 29"
+      x2="5.243"
+      transform="translate(17.041 50.187)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <line
+      id="Line_30"
+      data-name="Line 30"
+      x2="5.243"
+      transform="translate(24.906 50.187)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+    <path
+      id="Path_81"
+      data-name="Path 81"
+      d="M394,334.865V327h6.554v7.865"
+      transform="translate(-359.918 -278.124)"
+      fill="none"
+      stroke="#556474"
+      stroke-miterlimit="10"
+      stroke-width="2"
+    />
+  </g>
+</svg>
