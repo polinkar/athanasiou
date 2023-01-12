@@ -20,47 +20,30 @@
   }
 }
 
-// Lines
-
-.accent-line {
-  display: flex;
-  gap: 1rem;
-
-  &:before {
-    content: "";
-    height: 0.1rem;
-    width: 2.5rem;
-    margin-top: 1rem;
-    background-color: $accent1;
-  }
-}
-
-.accent-line-right {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  white-space: nowrap; // Never take 2 lines
-
-  &:after {
-    content: "";
-    height: 0.1rem;
-    width: 100%;
-    margin-top: 1rem;
-    background-color: $accent1;
-  }
-}
-
-.accent-line-left {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  white-space: nowrap; // Never take 2 lines
+.hero {
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  background-color: $primary;
+  background-repeat: no-repeat;
 
   &:before {
     content: "";
-    height: 0.1rem;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    margin-top: 1rem;
-    background-color: $accent1;
+    height: 100%;
+    background: $primary;
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+
+    z-index: 1;
+    color: $white;
   }
 }

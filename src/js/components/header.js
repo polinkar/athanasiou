@@ -59,6 +59,44 @@ const header = async () => {
       languageSwitcher
     );
   });
+
+  // Check if the user is scrolling
+  let lastScrollPosition = 0;
+
+  // Reveal Header on Scroll
+  const revealHeaderonScroll = function (header) {
+    const distanceFromTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+
+    // Scrolling down
+    if (distanceFromTop > lastScrollPosition) {
+      header.style.transform = `translateY(-${
+        header.getBoundingClientRect().height
+      }px)`;
+    }
+    // Scrolling Up
+    else {
+      header.style.transform = "translateY(0)";
+      header.classList.add("header--scroll");
+    }
+
+    // Reset
+    lastScrollPosition = distanceFromTop <= 0 ? 0 : distanceFromTop;
+
+    // We are at the Top
+    if (distanceFromTop == 0) {
+      console.log("We are at the top");
+      header.classList.remove("header--scroll");
+    }
+  };
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      revealHeaderonScroll(headerElement);
+    },
+    false
+  );
 };
 
 header();

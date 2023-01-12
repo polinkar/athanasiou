@@ -1,31 +1,8 @@
 //Homepage
 
-.hero {
-  justify-content: center;
-  position: relative;
-  background-color: $primary;
+.hero-home {
   background-image: url("/src/assets/img/hero-home-1.svg");
-  background-repeat: no-repeat;
   background-position: center center;
-
-  &__text-container {
-    display: flex;
-    flex-direction: column;
-    align-self: start;
-
-    z-index: 1;
-    color: $white;
-  }
-
-  &__heading-small:before {
-    content: "";
-    position: absolute;
-    height: 0.1rem;
-    width: calc((100vw - 1350px) / 2);
-    margin-top: 1rem;
-    left: 0;
-    background-color: $accent1;
-  }
 
   &__heading-big {
     margin: 0;

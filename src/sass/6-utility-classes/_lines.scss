@@ -1,0 +1,54 @@
+// Lines
+
+// .accent-line {
+//   display: flex;
+//   gap: 1rem;
+
+//   &:before {
+//     content: "";
+//     height: 0.1rem;
+//     width: 2.5rem;
+//     margin-top: 1rem;
+//     background-color: $accent1;
+//   }
+// }
+
+.accent-line-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap; // Never take 2 lines
+
+  &:after {
+    content: "";
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $accent1;
+  }
+}
+
+.accent-line-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap; // Never take 2 lines
+
+  &:before {
+    content: "";
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $accent1;
+  }
+}
+
+.accent-line--left-absolute:before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: calc((100vw - 1350px) / 2);
+  margin-top: 1rem;
+  left: 0;
+  background-color: $accent1;
+}

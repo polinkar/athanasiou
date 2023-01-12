@@ -3,27 +3,29 @@
 .header {
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed;
   z-index: 2;
   overflow-x: hidden;
-  background: $transparent;
-  position: fixed;
   width: 100%;
+  background: $transparent;
+  transform: translateX("0px"); // Used for transition
+  transition: all ease 0.5s;
+
+  &--scroll {
+    background: $primary;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "language-switcher language-switcher" "logo main-menu";
     align-items: center;
+    padding: 1.5rem 0;
 
     @include view(md-max) {
       grid-template-columns: auto;
       grid-template-areas: "logo main-menu";
-      // position: relative;
     }
-
-    // Make the hero section's background visible
-    // position: absolute;
-    padding: 1.5rem 0;
   }
 
   &__logo-container {
