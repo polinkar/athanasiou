@@ -10,27 +10,26 @@
 @import "2-global/typography";
 @import "2-global/elements";
 
+// Utility Classes
+@import "3-utility-classes/containers";
+@import "3-utility-classes/lines";
+@import "3-utility-classes/lib-related";
+
 // Components
-@import "3-components/buttons";
-@import "3-components/icons-grid";
-@import "3-components/forms";
-@import "3-components/navigation";
-@import "3-components/language-switcher";
-@import "3-components/card";
+@import "4-components/buttons";
+@import "4-components/icons-grid";
+@import "4-components/forms";
+@import "4-components/navigation";
+@import "4-components/language-switcher";
+@import "4-components/card";
 
 // Layouts
-@import "4-layouts/header";
-@import "4-layouts/footer";
-@import "4-layouts/newsletter-form";
-@import "4-layouts/carousel";
-@import "4-layouts/puzzle";
+@import "5-layouts/header";
+@import "5-layouts/footer";
+@import "5-layouts/newsletter-form";
+@import "5-layouts/carousel";
 
 // Pages
-@import "5-pages/home";
-@import "5-pages/about";
-@import "5-pages/contact";
-
-// Utility Classes
-@import "6-utility-classes/containers";
-@import "6-utility-classes/lines";
-@import "6-utility-classes/lib-related";
+@import "6-pages/home";
+@import "6-pages/about";
+@import "6-pages/contact";

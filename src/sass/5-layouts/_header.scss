@@ -11,6 +11,10 @@
   transform: translateX("0px"); // Used for transition
   transition: all ease 0.5s;
 
+  @include view(md-max) {
+    background: $primary;
+  }
+
   &--scroll {
     background: $primary;
   }

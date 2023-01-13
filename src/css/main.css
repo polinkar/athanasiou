@@ -160,9 +160,95 @@ a {
     opacity: 0.3;
     transition: all ease 0.5s; }
 
+.boxed {
+  width: 90%;
+  max-width: 1290px; }
+
+.centered {
+  margin: 0 auto;
+  padding: 5rem 0; }
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem; }
+  @media only screen and (max-width: 767px) {
+    .two-col {
+      grid-template-columns: 1fr; } }
+
+.hero {
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  background-color: #001f3f;
+  background-repeat: no-repeat; }
+  .hero:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: #001f3f;
+    opacity: 0.8;
+    z-index: -1; }
+  .hero__text-container {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    z-index: 1;
+    color: #ffffff; }
+
+.accent-line {
+  display: flex;
+  gap: 1rem; }
+  .accent-line:before {
+    content: "";
+    height: 0.1rem;
+    width: 2.5rem;
+    margin-top: 1rem;
+    background-color: #ffc631; }
+
+.accent-line-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap; }
+  .accent-line-right:after {
+    content: "";
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ffc631; }
+
+.accent-line-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  white-space: nowrap; }
+  .accent-line-left:before {
+    content: "";
+    height: 0.1rem;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ffc631; }
+
+.accent-line--left-absolute:before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: calc((100vw - 1350px) / 2);
+  margin-top: 1rem;
+  left: 0;
+  background-color: #ffc631; }
+
+.wpml-ls-current-language {
+  font-weight: 700; }
+
 .button {
   display: inline-block;
   position: relative;
+  z-index: 10;
   margin: 2rem 0;
   padding: 1rem;
   background: #ffc631;
@@ -341,10 +427,9 @@ a {
         flex-direction: column;
         gap: 1rem;
         position: absolute;
-        top: 100%;
         width: 100vw;
         padding: 2.5rem;
-        background-color: #ffffff; } }
+        background-color: #001f3f; } }
     .main-menu__list--open {
       left: 0;
       opacity: 1;
@@ -484,6 +569,9 @@ a {
   background: transparent;
   transform: translateX("0px");
   transition: all ease 0.5s; }
+  @media only screen and (max-width: 991px) {
+    .header {
+      background: #001f3f; } }
   .header--scroll {
     background: #001f3f; }
   .header__container {
@@ -806,78 +894,3 @@ a {
 .text--reverse {
   align-self: end;
   text-align: right; }
-
-.boxed {
-  width: 90%;
-  max-width: 1290px; }
-
-.centered {
-  margin: 0 auto;
-  padding: 5rem 0; }
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 2rem; }
-  @media only screen and (max-width: 767px) {
-    .two-col {
-      grid-template-columns: 1fr; } }
-
-.hero {
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  background-color: #001f3f;
-  background-repeat: no-repeat; }
-  .hero:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background: #001f3f;
-    opacity: 0.8;
-    z-index: -1; }
-  .hero__text-container {
-    display: flex;
-    flex-direction: column;
-    align-self: start;
-    z-index: 1;
-    color: #ffffff; }
-
-.accent-line-right {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  white-space: nowrap; }
-  .accent-line-right:after {
-    content: "";
-    height: 0.1rem;
-    width: 100%;
-    margin-top: 1rem;
-    background-color: #ffc631; }
-
-.accent-line-left {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  white-space: nowrap; }
-  .accent-line-left:before {
-    content: "";
-    height: 0.1rem;
-    width: 100%;
-    margin-top: 1rem;
-    background-color: #ffc631; }
-
-.accent-line--left-absolute:before {
-  content: "";
-  position: absolute;
-  height: 0.1rem;
-  width: calc((100vw - 1350px) / 2);
-  margin-top: 1rem;
-  left: 0;
-  background-color: #ffc631; }
-
-.wpml-ls-current-language {
-  font-weight: 700; }

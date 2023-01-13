@@ -1,17 +1,17 @@
 // Lines
 
-// .accent-line {
-//   display: flex;
-//   gap: 1rem;
+.accent-line {
+  display: flex;
+  gap: 1rem;
 
-//   &:before {
-//     content: "";
-//     height: 0.1rem;
-//     width: 2.5rem;
-//     margin-top: 1rem;
-//     background-color: $accent1;
-//   }
-// }
+  &:before {
+    content: "";
+    height: 0.1rem;
+    width: 2.5rem;
+    margin-top: 1rem;
+    background-color: $accent1;
+  }
+}
 
 .accent-line-right {
   display: flex;
