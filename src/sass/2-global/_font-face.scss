@@ -55,3 +55,15 @@
   font-family: "Roboto Flex", sans-serif;
   src: url(https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,700&display=swap%27);
 }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?ot6n2i");
+  src: url("fonts/icomoon.eot?ot6n2i#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?ot6n2i") format("truetype"),
+    url("fonts/icomoon.woff?ot6n2i") format("woff"),
+    url("fonts/icomoon.svg?ot6n2i#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
